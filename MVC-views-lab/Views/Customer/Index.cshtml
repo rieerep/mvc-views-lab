@@ -1,0 +1,23 @@
+﻿@model IEnumerable<MVC_views_lab.Models.CustomerModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+@Html.Partial("CustomerHeaders", Model)
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+            @Html.Partial("CustomerBox", item)
+        }
+    </tbody>
+</table>

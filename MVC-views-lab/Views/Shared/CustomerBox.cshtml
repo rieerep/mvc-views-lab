@@ -1,0 +1,22 @@
+﻿@model CustomerModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => Model.Id)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => Model.Name)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => Model.Info)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => Model.Email)
+    </td>Html
+    <td>@Html.ActionLink("Edit", "Edit", new{Model.Id})</td>
+</tr>
