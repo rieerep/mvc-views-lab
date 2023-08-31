@@ -26,6 +26,11 @@ namespace MVC_views_lab.Controllers
         {
 
             CustomerModel customer = customers[id];
+            var viewModel = new EditCustomerViewModel
+            {
+                Name = customer.Name,
+                Email = customer.Email
+            };
 
             //EditCustomerViewModel editPerson = new EditCustomerViewModel
             //{
@@ -33,7 +38,7 @@ namespace MVC_views_lab.Controllers
             //    Email = customer.Email,
             //};
 
-            return View(customer);
+            return View(viewModel);
         }
     }
 }

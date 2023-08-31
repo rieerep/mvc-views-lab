@@ -5,11 +5,11 @@ namespace MVC_views_lab.Models.ViewModel
 {
     public class EditCustomerViewModel
     {
-        [DisplayName("Name")]
-        [Required(ErrorMessage = "Please enter name")]
+        [DisplayName("Namn")]
+        [Required(ErrorMessage = "Ange ett namn")]
         public string? Name { get; set; }
-        [DisplayName("Email")]
-        [Required(ErrorMessage = "Please enter Email")]
+        [DisplayName("E-post")]
+        [Required(ErrorMessage = "Ange en e-post")]
         public string? Email { get; set; }
     }
 }
